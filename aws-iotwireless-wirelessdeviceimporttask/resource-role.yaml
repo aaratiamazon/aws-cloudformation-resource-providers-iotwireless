@@ -30,15 +30,16 @@ Resources:
             Statement:
               - Effect: Allow
                 Action:
-                  - "iotwireless:DeleteWirelessDeviceImportTask"
-                  - "iotwireless:GetWirelessDeviceImportTask"
-                  - "iotwireless:ListTagsForResource"
-                  - "iotwireless:ListWirelessDeviceImportTasks"
-                  - "iotwireless:StartSingleWirelessDeviceImportTask"
-                  - "iotwireless:StartWirelessDeviceImportTask"
-                  - "iotwireless:TagResource"
-                  - "iotwireless:UntagResource"
-                  - "iotwireless:UpdateWirelessDeviceImportTask"
+                - "iam:PassRole"
+                - "iotwireless:DeleteWirelessDeviceImportTask"
+                - "iotwireless:GetWirelessDeviceImportTask"
+                - "iotwireless:ListTagsForResource"
+                - "iotwireless:ListWirelessDeviceImportTasks"
+                - "iotwireless:StartSingleWirelessDeviceImportTask"
+                - "iotwireless:StartWirelessDeviceImportTask"
+                - "iotwireless:TagResource"
+                - "iotwireless:UntagResource"
+                - "iotwireless:UpdateWirelessDeviceImportTask"
                 Resource: "*"
 Outputs:
   ExecutionRoleArn:
